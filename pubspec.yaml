@@ -15,9 +15,12 @@ dependencies:
   provider: ^6.0.0
   syncfusion_flutter_charts: ^19.2.62
   http: ^0.13.3
+  currency_icons: ^0.3.0
 dev_dependencies:
   flutter_test:
     sdk: flutter
 
 flutter:
   uses-material-design: true
+  assets:
+    - assets/images/

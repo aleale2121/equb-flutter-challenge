@@ -1,4 +1,5 @@
 import 'package:equb_flutter_challenge/widgets/chart/debt_container.dart';
+import 'package:equb_flutter_challenge/widgets/due_payment/due_payment_container.dart';
 import 'package:flutter/material.dart';
 
 class MainScreen extends StatelessWidget {
@@ -23,10 +24,11 @@ class MainScreen extends StatelessWidget {
       ),
       body: Container(
         color: Colors.white,
-        padding: EdgeInsets.only(left: 32.0, right: 32.0),
         child: Column(
           children: [
             DebtContainer(),
+            SizedBox(height: 5,),
+            DuePaymentContainer(),
           ],
         ),
       ),
