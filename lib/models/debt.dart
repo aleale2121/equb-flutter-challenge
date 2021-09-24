@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
 
-class Dept {
+class Debt {
   final String bankName;
   final double deptAmount;
   final Color color;
 
-  Dept({
+  Debt({
     required this.bankName,
     required this.deptAmount,
     required this.color,
