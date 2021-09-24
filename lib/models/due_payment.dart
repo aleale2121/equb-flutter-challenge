@@ -11,11 +11,11 @@ class DuePayment {
   late final String createdAt;
   late final String owedAmount;
   late final String dueDate;
-  late final String name;
+  late  String name;
   late final int paidRounds;
   late final int totalRounds;
   late final String id;
-  late final String imagePath;
+  late  String imagePath;
 
   DuePayment.fromJson(Map<String, dynamic> json) {
     imagePath = "";
