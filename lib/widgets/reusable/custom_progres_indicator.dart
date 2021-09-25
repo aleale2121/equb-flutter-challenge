@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 
 class CustomProgressIndicator extends StatelessWidget {
   final double value;
-  final Color color;
+  final Color color,strokeColor;
   final Widget child;
   final double radius;
   const CustomProgressIndicator({
@@ -12,6 +12,7 @@ class CustomProgressIndicator extends StatelessWidget {
     required this.color,
     required this.child,
     required this.radius,
+    required this.strokeColor,
   }) : super(key: key);
 
   @override
@@ -19,6 +20,7 @@ class CustomProgressIndicator extends StatelessWidget {
     return Container(
       height: radius*2,
       child: Stack(
+        alignment: Alignment.center,
         children: <Widget>[
           Center(
             child: Container(
@@ -27,7 +29,7 @@ class CustomProgressIndicator extends StatelessWidget {
               child: new CircularProgressIndicator(
                 strokeWidth: 2,
                 value: this.value,
-                color: kRed,
+                color: strokeColor,
               ),
             ),
           ),
