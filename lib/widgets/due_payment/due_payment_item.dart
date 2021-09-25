@@ -17,6 +17,7 @@ class PaymentItem extends StatelessWidget {
 
   void showSnackbar(BuildContext context, String data) {
     final snackBar = SnackBar(content: Text(data));
+    ScaffoldMessenger.of(context).removeCurrentSnackBar();
     ScaffoldMessenger.of(context).showSnackBar(
       snackBar,
     );
