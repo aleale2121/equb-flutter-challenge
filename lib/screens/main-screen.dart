@@ -1,4 +1,5 @@
 import 'package:equb_flutter_challenge/widgets/chart/debt_container.dart';
+import 'package:equb_flutter_challenge/widgets/collected_payment/collected_payment_container.dart';
 import 'package:equb_flutter_challenge/widgets/due_payment/due_payment_container.dart';
 import 'package:flutter/material.dart';
 
@@ -22,14 +23,18 @@ class MainScreen extends StatelessWidget {
               onPressed: () {}, icon: Icon(Icons.bookmark, color: Colors.black))
         ],
       ),
-      body: Container(
-        color: Colors.white,
-        child: Column(
-          children: [
-            DebtContainer(),
-            SizedBox(height: 5,),
-            DuePaymentContainer(),
-          ],
+      body: SingleChildScrollView(
+        physics: ScrollPhysics(),
+        child: Container(
+          color: Colors.white,
+          child: Column(
+            children: [
+              DebtContainer(),
+              SizedBox(height: 5,),
+              DuePaymentContainer(),
+              CollectedPaymentContainer(),
+            ],
+          ),
         ),
       ),
     );

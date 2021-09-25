@@ -1,3 +1,5 @@
+import 'package:equb_flutter_challenge/models/collected_payment.dart';
+import 'package:equb_flutter_challenge/providers/collected_payments.dart';
 import 'package:equb_flutter_challenge/providers/due_payments.dart';
 import 'package:equb_flutter_challenge/route/route.dart';
 import 'package:equb_flutter_challenge/screens/main-screen.dart';
@@ -18,6 +20,7 @@ class App extends StatelessWidget {
       providers: [
         ChangeNotifierProvider(create: (_) => Debts()),
         ChangeNotifierProvider(create: (_) => DuePayments()),
+        ChangeNotifierProvider(create: (_) => CollectedPayments()),
       ],
       child: MaterialApp(
         title: 'APP',
