@@ -36,6 +36,7 @@ class PaymentItem extends StatelessWidget {
   Widget build(BuildContext context) {
     return CustomCard(
       width: 125,
+      height: 200,
       child: Column(
         mainAxisAlignment: MainAxisAlignment.start,
         children: [
@@ -53,6 +54,7 @@ class PaymentItem extends StatelessWidget {
               ),
             ),
             radius: 25,
+            strokeColor: kRed,
           ),
           SizedBox(
             height: 5,

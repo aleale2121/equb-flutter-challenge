@@ -1,5 +1,4 @@
 import 'package:equb_flutter_challenge/providers/due_payments.dart';
-import 'package:equb_flutter_challenge/widgets/reusable/custom_card.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
