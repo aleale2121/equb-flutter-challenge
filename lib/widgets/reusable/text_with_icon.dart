@@ -5,7 +5,7 @@ class TextWithIcon extends StatelessWidget {
   final IconData icon;
   final String text;
   final double textSize, iconSize;
-  final FontWeight weight;
+  final FontWeight? weight;
   const TextWithIcon({
     Key? key,
     required this.icon,
@@ -14,7 +14,7 @@ class TextWithIcon extends StatelessWidget {
     required this.iconSize,
     required this.textColor,
     required this.iconColor,
-    required this.weight,
+     this.weight,
   }) : super(key: key);
 
   @override
