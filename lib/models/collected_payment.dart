@@ -11,12 +11,12 @@ class CollectedPayment with ChangeNotifier {
     isBookmarked = false,
   });
   late final String createdAt;
-  late final String title;
+  late String title;
   late final int frequency;
   late final String amount;
   late final int membersCount;
   late final String id;
-  late final bool isBookmarked;
+  late bool isBookmarked;
   CollectedPayment.fromJson(Map<String, dynamic> json) {
     createdAt = json['createdAt'];
     title = json['title'];
@@ -38,6 +38,7 @@ class CollectedPayment with ChangeNotifier {
   }
 
   void toggleBookmarkStatus() {
+    print("ho");
     isBookmarked = !isBookmarked;
     notifyListeners();
   }
