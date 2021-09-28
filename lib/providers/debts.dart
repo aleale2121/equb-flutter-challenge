@@ -56,7 +56,7 @@ class Debts with ChangeNotifier, DiagnosticableTreeMixin {
     return total;
   }
 
-  bool get showDebt=>_showDebts;
+  bool get showDebt => _showDebts;
 
   void selectIndex(int index) {
     _selectedIndex = index;
@@ -66,7 +66,6 @@ class Debts with ChangeNotifier, DiagnosticableTreeMixin {
   void toggleShowDebt() {
     _showDebts = !_showDebts;
     notifyListeners();
-
   }
 
   double percentValue(double amount) {
